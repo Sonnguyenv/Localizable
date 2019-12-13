@@ -9,6 +9,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ViewController" customModule="Localizable" customModuleProvider="target">
             <connections>
+                <outlet property="label" destination="KFc-5Z-Jhj" id="mb7-4p-ffO"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -16,7 +17,47 @@
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="home" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KFc-5Z-Jhj">
+                    <rect key="frame" x="185.5" y="437.5" width="43.5" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VqD-ul-1X6">
+                    <rect key="frame" x="0.0" y="488" width="207" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="2fy-mH-klG"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                    <state key="normal" title="vi"/>
+                    <connections>
+                        <action selector="viButton:" destination="-1" eventType="touchUpInside" id="6bm-fi-r8m"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0eO-Xz-MJf">
+                    <rect key="frame" x="207" y="488" width="207" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="L0V-KO-ur6"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                    <state key="normal" title="en"/>
+                    <connections>
+                        <action selector="enButton:" destination="-1" eventType="touchUpInside" id="4kz-ob-TVf"/>
+                    </connections>
+                </button>
+            </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="KFc-5Z-Jhj" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="1Zc-lX-kvH"/>
+                <constraint firstItem="0eO-Xz-MJf" firstAttribute="width" secondItem="VqD-ul-1X6" secondAttribute="width" id="6Qv-dF-smQ"/>
+                <constraint firstItem="KFc-5Z-Jhj" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Kp8-m6-ppt"/>
+                <constraint firstItem="VqD-ul-1X6" firstAttribute="top" secondItem="KFc-5Z-Jhj" secondAttribute="bottom" constant="29.5" id="YNn-hA-QAS"/>
+                <constraint firstItem="VqD-ul-1X6" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="Zzm-rT-xLU"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="0eO-Xz-MJf" secondAttribute="trailing" id="m6E-eB-Lby"/>
+                <constraint firstItem="0eO-Xz-MJf" firstAttribute="leading" secondItem="VqD-ul-1X6" secondAttribute="trailing" id="t5P-g6-RuS"/>
+                <constraint firstItem="0eO-Xz-MJf" firstAttribute="bottom" secondItem="VqD-ul-1X6" secondAttribute="bottom" id="xnb-eh-Usj"/>
+            </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <point key="canvasLocation" x="132" y="154"/>
         </view>

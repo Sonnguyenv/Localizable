@@ -10,21 +10,26 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var label: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        onUpdateLocale()
     }
-
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    
+    func onUpdateLocale() {
+        label.text = LanguageManager.instance.localizable("home")
     }
-    */
-
+    
+    @IBAction func viButton(_ sender: Any) {
+        Preferences.shared.setLocale(Language.vi.rawValue)
+        onUpdateLocale()
+    }
+    
+    @IBAction func enButton(_ sender: Any) {
+        Preferences.shared.setLocale(Language.en.rawValue)
+        onUpdateLocale()
+    }
+    
+    
 }
