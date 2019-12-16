@@ -12,12 +12,12 @@ class Preferences {
     
     static let shared = Preferences()
     
-    private static let currentLocale = "CurrentLocale"
-    private static let defaultLocale = Language.vi
+    static let currentLocale = "CurrentLocale"
+    static let defaultLocale = Language.vi
     
     func currentLocale() -> String {
-        if let locale = UserDefaults.standard.value(forKey: Preferences.currentLocale) {
-            return locale as! String
+        if let locale = UserDefaults.standard.string(forKey: Preferences.currentLocale) {
+            return locale
         }
         return Preferences.defaultLocale.rawValue
     }

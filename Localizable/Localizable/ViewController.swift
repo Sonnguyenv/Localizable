@@ -11,6 +11,8 @@ import UIKit
 class ViewController: UIViewController {
 
     @IBOutlet weak var label: UILabel!
+    @IBOutlet weak var viButton: UIButton!
+    @IBOutlet weak var enButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -18,15 +20,17 @@ class ViewController: UIViewController {
     }
     
     func onUpdateLocale() {
-        label.text = LanguageManager.instance.localizable("home")
+        label.text = "home".localized
+        viButton.setTitle("vi".localized, for: .normal)
+        enButton.setTitle("en".localized, for: .normal)
     }
     
-    @IBAction func viButton(_ sender: Any) {
+    @IBAction func viButton(_ sender: UIButton) {
         Preferences.shared.setLocale(Language.vi.rawValue)
         onUpdateLocale()
     }
     
-    @IBAction func enButton(_ sender: Any) {
+    @IBAction func enButton(_ sender: UIButton) {
         Preferences.shared.setLocale(Language.en.rawValue)
         onUpdateLocale()
     }

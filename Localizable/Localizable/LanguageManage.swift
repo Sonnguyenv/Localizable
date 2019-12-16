@@ -12,6 +12,7 @@ enum Language: String {
     case en = "en"
     case vi = "vi"
 }
+
 class LanguageManager {
     
     static let instance = LanguageManager()

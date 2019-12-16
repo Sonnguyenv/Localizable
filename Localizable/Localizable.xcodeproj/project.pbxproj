@@ -18,6 +18,7 @@
 		E03A505523A3929600491A0F /* LanguageManage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E03A505423A3929600491A0F /* LanguageManage.swift */; };
 		E03A505723A3945200491A0F /* Preferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = E03A505623A3945200491A0F /* Preferences.swift */; };
 		E03A505A23A3988A00491A0F /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = E03A505C23A3988A00491A0F /* Localizable.strings */; };
+		E06E08BE23A72D2D004F6462 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = E06E08BD23A72D2D004F6462 /* String.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,10 +53,11 @@
 		E03A504423A3832700491A0F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E03A505023A38BFD00491A0F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		E03A505123A38BFD00491A0F /* ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ViewController.xib; sourceTree = "<group>"; };
-		E03A505423A3929600491A0F /* LanguageManage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageManage.swift; sourceTree = "<group>"; };
+		E03A505423A3929600491A0F /* LanguageManage.swift */ = {isa = PBXFileReference; indentWidth = 3; lastKnownFileType = sourcecode.swift; path = LanguageManage.swift; sourceTree = "<group>"; };
 		E03A505623A3945200491A0F /* Preferences.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Preferences.swift; sourceTree = "<group>"; };
 		E03A505B23A3988A00491A0F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		E03A505D23A3988F00491A0F /* vi */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = vi; path = vi.lproj/Localizable.strings; sourceTree = "<group>"; };
+		E06E08BD23A72D2D004F6462 /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +117,7 @@
 				E03A502823A3832700491A0F /* Preview Content */,
 				E03A505423A3929600491A0F /* LanguageManage.swift */,
 				E03A505623A3945200491A0F /* Preferences.swift */,
+				E06E08BD23A72D2D004F6462 /* String.swift */,
 				E03A505C23A3988A00491A0F /* Localizable.strings */,
 			);
 			path = Localizable;
@@ -279,6 +282,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E06E08BE23A72D2D004F6462 /* String.swift in Sources */,
 				E03A505523A3929600491A0F /* LanguageManage.swift in Sources */,
 				E03A505223A38BFD00491A0F /* ViewController.swift in Sources */,
 				E03A505723A3945200491A0F /* Preferences.swift in Sources */,
